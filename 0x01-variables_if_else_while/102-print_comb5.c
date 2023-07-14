@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Inputs
- * Description: combinations of two two digit numbers
+ * Description: combinations of two two digit number
  * Return: should be 0
  */
 int main(void)
