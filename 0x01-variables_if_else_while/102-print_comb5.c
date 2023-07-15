@@ -1,31 +1,41 @@
 #include <stdio.h>
 /**
- * main - Inputs
- * Description: combinations of two two digit number
- * Return: should be 0
+ * main - prints combination to 2 digit number
+ *
+ * Return: (0)
+ *
  */
 int main(void)
 {
-	int num1;
-	int num2;
+	int i, j;
+	int a, b, c, d;
 
-	for (num1 = 0; num1 < 99; num1++)
-		for (num2 = num1 + 1; num2 <= 99; num2++)
-		{
-		putchar(num1 / 10 + '0');
-		putchar(num1 % 10 + '0');
-		putchar(' ');
-		putchar(num2 / 10 + '0');
-		putchar(num2 % 10 + '0');
+	for (i = 0; i < 100; i++)
+	{
+		a = i / 10;
+		b = i % 10;
 
-	if (num1 == 99 && num2 == 98)
+		for (j = 0; j < 100; j++)
 		{
-		continue;
+			c = j / 10;
+			d = j % 10;
+
+			if (a < c || (a == c && b < d))
+			{
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
-		putchar(',');
-		putchar(' ');
 	}
-		putchar('\n');
-		return (0);
+	putchar(10);
+	return (0);
 }
-
