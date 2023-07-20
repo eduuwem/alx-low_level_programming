@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -11,11 +12,11 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s", "FIZZBUZZ");
+			printf("%s", "FizzBuzz");
 		else if (i % 3 == 0)
-			printf("%s", "FIZZ");
+			printf("%s", "Fizz");
 		else if (i % 5 == 0)
-			printf("%s", "BUZZ");
+			printf("%s", "Buzz");
 		else
 			printf("%d", i);
 		if (i != 100)
