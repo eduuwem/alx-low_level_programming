@@ -32,7 +32,7 @@ void rev_string(char *n)
  * @n2: text representation of 2nd number to add
  * @r: pointer to buffer
  * @size_r: buffer size
- * Return: pointer to calling function
+ * Return: pointer to calling functions
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
