@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - Entry points
+ * _strpbrk - Entry point
  * @s: input
  * @iaccept: input
  * Return: Always 0 (Success)
