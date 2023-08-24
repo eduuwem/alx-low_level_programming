@@ -3,7 +3,7 @@
 
 /**
  * struct list_s - singly linked list
- * @str: string - pointer to a dynamically allocated 
+ * @str: string - pointer to a dynamically allocated
  * (malloc'ed) string.
  * @len: This is length of the string
  * @next: This is pointer to the next node in the list.
