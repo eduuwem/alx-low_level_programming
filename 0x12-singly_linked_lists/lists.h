@@ -3,12 +3,11 @@
 
 /**
  * struct list_s - singly linked list
- * @str: string - pointer to a dynamically allocated
- * (malloc'ed) string.
- * @len: This is length of the string
- * @next: This is pointer to the next node in the list.
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: point to the next node 
  *
- * Description: A singly linked list node structure tasks
+ * Description: A singly linked list node structure 
  */
 typedef struct list_s
 {
