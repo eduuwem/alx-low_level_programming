@@ -48,22 +48,16 @@ size_t looped_listint_len(const listint_t *head)
 
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t count = 0;
+	size_t portions = looped_listint_len(head);
 
-	while (head)
+	for (; portions > 0 && head != NULL; portions--)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
-		count++;
-
-		if (head->next && (head->next < head))
-		{
-			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-			break;
-		}
-
 		head = head->next;
 	}
 
-	return count;
-}
+	if (portions == 0 && head != NULL)
+		printf("-> [%p] %d\n", (void *)head, head->n);
 
+	return (looped_listint_len(head));
+}
