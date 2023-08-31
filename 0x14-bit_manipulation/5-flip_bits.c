@@ -18,7 +18,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		count += exclusive & 1;
 		exclusive >>= 1;
 	}
-	return count;
+	return (count);
 }
-					        
-
