@@ -6,7 +6,8 @@ int main(void)
 	int n;
 
 	n = get_endianness();
-	  if (n != 0)
+
+	if (n != 0)
 	{
 		printf("Little Endian\n");
 	}

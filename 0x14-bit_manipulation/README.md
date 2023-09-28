@@ -1,1 +1,1 @@
-bit_manipulation in c language (alx tasks)
+bit_manipulation in c language (alx_tasks)
